@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "com.example.bilal.myapplication"
-        minSdkVersion 9
+        minSdkVersion 14
         targetSdkVersion 19
         versionCode 1
         versionName "1.0"
@@ -22,8 +22,6 @@ android {
 dependencies {
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile ('com.smartdevicelink:bson_java_port:1.0.0@aar'){
         transitive = true
     }
