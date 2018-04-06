@@ -10,7 +10,7 @@ android:
     - ndk-bundle
 
     # The BuildTools version used by your project
-    - build-tools-27.0.3
+    - build-tools-27.0.1
 
     # The SDK version used to compile your project
     - android-26
@@ -46,7 +46,7 @@ script:
   - ./gradlew connectedAndroidTest
 
 before_install:
-    - yes | sudo sdkmanager --licenses
+    - echo yes | sdkmanager "build-tools;27.0.1"
     - pip install --user codecov    #Install codecov
 
 after_success:
